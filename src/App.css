@@ -2,6 +2,53 @@
   text-align: center;
 }
 
+
+.home {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.steps {
+  display: flex;
+  padding: 20px;
+}
+
+.step-link:focus, .step-link:hover {
+  background: #70bbfd;
+  border-color: #70bbfd;
+  color: white;
+
+}
+
+.step-link:focus, .step-link:hover a{
+  color: white;
+}
+
+.step-link {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  text-transform: uppercase;
+  transition: background .3s;
+  border-radius: 5px;
+  border: 1px solid #eff1f5;
+  background: #fafbfe;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
