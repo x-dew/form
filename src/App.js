@@ -1,36 +1,33 @@
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
+import Step_1 from "./component/step-1/step_1";
+import Step_2 from "./component/step-2/step_2";
+import Step_3 from "./component/step-3/step_3";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <div className='home'>
-          <ul className='steps'>
-            <li className='step-link'>
-              <Link to="/Home">STEP 1</Link>
-            </li>
-            <li className='step-link'>
-              <Link to="/entrance">STEP 2</Link>
-            </li>
-            <li className='step-link'>
-              <Link to="/register">STEP 3</Link>
-            </li>
-          </ul>
+    const [step,setStep] = useState(Step_1)
+    console.log(step)
+    return (
+        <div className="App">
+                <div className='home'>
+                    <ul className='steps'>
+                        <li className='step-link'>STEP 1</li>
+                        <li className='step-link'>STEP 2</li>
+                        <li className='step-link'>STEP 3</li>
+                    </ul>
+                </div>
+            {step}
+                <div className='btn'>
+                        <button className='next-link' disabled>Back</button>
+                        <button className='next-link' onClick={()=>{
+                            console.log('ljljlj')
+                        }}>Next</button>
+                </div>
         </div>
-        <Switch>
-          <Route path='/Home'>
-          </Route>
-          <Route path='/register'>
-          </Route>
-          <Route path='/entrance'>
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+    );
 }
 
 export default App;
