@@ -1,8 +1,8 @@
 import React from "react";
 
-const Step_1 = ()=>{
+const Step_1 = (props)=>{
 return(
-    <div>
+    <div className='step-1'>
         <h1>Fill your personal data</h1>
         <div className='form-group'>
             <label htmlFor="1">Username</label>

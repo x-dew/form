@@ -18,9 +18,9 @@
 .form-group{
   font-size: 13px;
 }
-.step-link:focus, .step-link:hover {
-  background: #70bbfd;
-  border-color: #70bbfd;
+.active-link {
+  background: #70bbfd!important;
+  border-color: #70bbfd!important;
   color: white;
 
 }
@@ -92,13 +92,31 @@ label{
   position: relative;
   overflow: hidden;
   z-index: 0;
-  background-color: #70bbfd;
-  color: white;
+  background-color: #70bbfd!important;
+  color: white!important;
   border: none;
   margin-right: 10px;
 }
 
+.next-link:hover{
+  background: #568cbb!important;
+  cursor: pointer;
+}
 
+.disabled{
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  transition: all .4s;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-right: 10px;
+  background-color: #f2f4f7;
+  border: none;
+  color: #ddd;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Step_3 = () => {
     return (
-        <div>
+        <div className='step-3'>
             <h1>Set the preferences</h1>
             <div className='form-group'>
                 <label htmlFor="1">Change Plan</label>
